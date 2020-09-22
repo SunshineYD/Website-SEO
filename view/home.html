@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/language.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1 class="renderDom" data-lang="home_1"></h1>
+    <p class="renderDom" data-lang="home_2"></p>
+    <button class="langBtn" style="padding: 10px;">show en</button>
+    <script>
+        var pageName = 'home';
+		var lang = getParam("lang") == null ? 'en': getParam("lang");
+
+        function getRenderDom() {
+
+			for(var i = 0; i < $('.renderDom').length; i++) {
+                
+				var keyLang = $('.renderDom').eq(i).attr('data-lang');
+				$('.renderDom').eq(i).html(langArr[lang][pageName][keyLang]);
+            }
+        }
+
+        function getParam(param) {
+
+            var urlParams = window.location.search.substring(1);
+
+            return urlParams && urlParams.split("&").map(function(value, index) {
+
+                return value.split("=")[0] == param && value.split("=")[1];
+            })[0] || null;
+        }
+        
+        getRenderDom();
+
+        $(".langBtn").click(function () {
+
+            if (lang=='en') {
+                window.location.href = window.location.pathname + "?lang=cn";
+            } else if (lang=="cn"){
+                window.location.href = window.location.pathname + "?lang=en";
+            } else {
+                window.location.href = window.location.pathname + "?lang=en";
+            }
+            getRenderDom();
+        });
+
+    </script>
+</body>
+</html>

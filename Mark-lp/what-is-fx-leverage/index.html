@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Mitrade</title>
+    <meta name=" description " content="">
+    <meta name=" Keywords " content="">
+    <!-- 图标 -->
+    <!--plugs-->
+    <link rel="stylesheet" href="plug/bootstrap/css/bootstrap.min.css" />
+
+    <!--自定义-->
+    <link id="stylesheet" rel="stylesheet" href="css/base_en.css" />
+
+    <!-- aos-animate -->
+    <link rel="stylesheet" type="text/css" href="plug/aos/aos.css" />
+
+    <!-- language -->
+    <script src="js/language.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PN4G8XG');
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '269297307646234');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=269297307646234&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'ydg2pkj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN4G8XG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header d-none d-lg-block">
+        <div class="clearfix section-child">
+            <div class="m-auto d-none d-sm-block">
+                <img class="logo" src="img/mitrade-logo.png" />
+                <ul class="nav">
+                    <li>
+                        <a class="btn trackBtn renderDom" href="#" data-lang="header_1"></a>
+                    </li>
+                    <li>
+                        <a class="select-icon select-down hover-border renderDom" data-lang="header_2">
+                        </a>
+                        <div class="collapse-nav">
+                            <a class="head-link renderDom" data-lang="header_3"></a>
+                            <a class="head-link renderDom" data-lang="header_6"></a>
+                            <a class="head-link renderDom" data-lang="header_4"></a>
+                            <a class="head-link renderDom" data-lang="header_5"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-navbar d-lg-none">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="img/mitrade-logo.png" />
+            </a>
+            <a class="a-btn tradeBtn trackBtn renderDom" href="#" data-lang="header_1"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+                <img src="img/lang.png" />
+            </button>
+        </nav>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul>
+                <li>
+                    <a class="head-link text-center renderDom" data="/en/marketing/what-is-fx-leverage/index.html" data-lang="header_3"></a>
+                    <a class="head-link text-center renderDom" data="/zh/marketing/what-is-fx-leverage/index.html" data-lang="header_6"></a>
+                    <a class="head-link text-center renderDom" data="/vn/marketing/what-is-fx-leverage/index.html" data-lang="header_4"></a>
+                    <a class="head-link text-center renderDom" data="/th/marketing/what-is-fx-leverage/index.html" data-lang="header_5"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 杠杆交易策略 -->
+    <section id="section28">
+        <div class="clearfix section-child">
+            <div class="section-item text-left left-item">
+                <h3 class="renderDom" data-lang="section28_1">
+                </h3>
+                <ul>
+                    <li>
+                        <img src="img/section1-icon1.png" alt="">
+                        <p class="renderDom" data-lang="section28_2"></p>
+                    </li>
+                    <li>
+                        <img src="img/section1-icon2.png" alt="">
+                        <p class="renderDom" data-lang="section28_3"></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-item text-left right-item">
+                <div class="content-title">
+                    <p class="title renderDom" data-lang="section28_4"></p>
+                </div>
+                <div class="phone-box">
+                    <section id="section38" class="form-container">
+                        <div class="wrap-form">
+                            <div class="block2">
+                                <div class="form">
+                                    <div class="form-group p1">
+                                        <div class="input-group-prepend" id="phnoneNum">
+                                            <button type="button" id="areaVal" class="btn area-btn dropdown-toggle renderDom" data-lang="section28_5" data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="item renderDom" data-area="+886" data-lang="section28_6"></a>
+                                                <a class="item renderDom" data-area="+84" data-lang="section28_7"></a>
+                                                <a class="item renderDom" data-area="+66" data-lang="section28_8"></a>
+                                                <a class="item renderDom" data-area="+82" data-lang="section28_9"></a>
+                                                <a class="item renderDom" data-area="+63" data-lang="section28_10"></a>
+                                                <a class="item renderDom" data-area="+60" data-lang="section28_11"></a>
+                                                <a class="item renderDom" data-area="+86" data-lang="section28_12"></a>
+                                                <a class="item renderDom" data-area="+61" data-lang="section28_13"></a>
+                                            </div>
+                                        </div>
+                                        <input type="text" id="inputNumber4" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group p2">
+                                        <input type="text" id="inputCode" class="form-control" placeholder="">
+                                        <a id="sendCode" class="renderDom" data-lang="section28_14"></a>
+                                    </div>
+                                    <div class="form-group p3">
+                                        <input type="password" id="inputPassword4" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="tips">
+                                        <span class="vaild-tips"></span>
+                                    </div>
+                                    <button type="button" id="phnoneRegistBtn" class="btn btn-regist renderDom" data-lang="section28_15"></button>
+
+                                </div>
+                                <div class="oauth-sign">
+                                    <p>
+                                        <span data-lang="section28_16" class="renderDom"></span>
+                                    </p>
+                                    <div class="form-group d-none d-lg-block d-md-block">
+                                        <a class="fb" onlogin="checkLoginState();">
+
+                                        </a>
+                                        <a id="gaSignPhone" class="ge">
+
+                                        </a>
+                                    </div>
+                                    <div class="form-group d-lg-none d-md-none">
+                                        <a class="fb-m trackBtn">
+
+                                        </a>
+                                        <a class="ge-m trackBtn">
+
+                                        </a>
+                                    </div>
+                                    <div class="oauth-href renderDom" data-lang="section28_17"></div>
+                                    <div class="onelink-m">
+                                        <div class="d-none d-sm-block">
+                                            <a class="download-pc trackBtn" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<img src='https://www.mitrade.com/marketing/module/img/base/google-sem-bitcoin.png'>">
+                                                <img class="banner" src="img/google-play.png">
+                                                <div class="download-code">
+                                                    <div class="download-code-triangle"></div>
+                                                    <img src="img/zh/app-code2.png">
+                                                </div>
+                                            </a>
+                                            <a class="download-pc trackBtn" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<img src='https://www.mitrade.com/marketing/module/img/base/google-sem-bitcoin.png'>">
+                                                <img class="banner" src="img/app-store.png">
+                                                <div class="download-code">
+                                                    <div class="download-code-triangle"></div>
+                                                    <img src="img/zh/app-code2.png">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="d-lg-none d-md-none">
+                                            <a class="google-play trackBtn"></a>
+                                            <a class="app-store trackBtn"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section31">
+        <div class="clearfix section-child">
+            <div class="block1 clearfix">
+                <div class="left">
+                    <h3 class="renderDom" data-lang="section31_1"></h3>
+                    <img class="d-lg-none" src="img/zh/section2-img.png">
+                    <p class="split-line renderDom" data-lang="section31_2"></p>
+                    <p class="renderDom" data-lang="section31_3"></p>
+                    <p class="renderDom" data-lang="section31_4"></p>
+                </div>
+                <div class="right d-none d-lg-block d-md-none">
+                    <div class="img-container">
+                        <img src="img/zh/section2-img.png">
+                    </div>
+                </div>
+            </div>
+            <div class="background-box">
+                <div class="block2 clearfix">
+                    <div class="left">
+                        <!-- iframe K线图优化部分 -->
+                        <!-- <iframe src="https://www.fxhbglobal.com/tvCharts/?symbol=&lang=&pricescale=" frameborder="0"></iframe> -->
+                        <img src="img/zh/section2-img2.png">
+                        <div class="animated-icon">
+                            <div class="animated animated-icon1 scale-2"></div>
+                            <div class="animated animated-icon2 scale-2"></div>
+                            <div class="animated animated-icon3 scale-2"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3 class="renderDom" data-lang="section31_5"></h3>
+                        <ul class="d-none d-lg-block d-md-none">
+                            <li class="renderDom" data-lang="section31_6"></li>
+                            <li class="renderDom" data-lang="section31_7"></li>
+                            <li class="renderDom" data-lang="section31_8"></li>
+                            <li class="renderDom" data-lang="section31_9"></li>
+                        </ul>
+                        <ul class="d-lg-none d-md-block">
+                            <li>
+                                <img src="img/li-icon.png" alt="">
+                                <span class="renderDom" data-lang="section31_10"></span>
+                            </li>
+                            <li>
+                                <img src="img/li-icon.png" alt="">
+                                <span class="renderDom" data-lang="section31_11"></span>
+                            </li>
+                            <li>
+                                <img src="img/li-icon.png" alt="">
+                                <span class="renderDom" data-lang="section31_12"></span>
+                            </li>
+                            <li>
+                                <img src="img/li-icon.png" alt="">
+                                <span class="renderDom" data-lang="section31_13"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block3">
+                <h3 class="renderDom" data-lang="section31_14"></h3>
+                <ul class="content-list">
+                    <li>
+                        <p>
+                            <img src="img/section3-img1.png" />
+                            <span class="renderDom" data-lang="section31_15"></span>
+                        </p>
+                        <div class="renderDom" data-lang="section31_16"></div>
+                    </li>
+                    <li>
+                        <p class="d-none d-md-block d-lg-block">
+                            <img src="img/section3-img2.png" />
+                            <span class="renderDom" data-lang="section31_17"></span>
+                        </p>
+                        <p class="d-md-none d-lg-none">
+                            <img src="img/section3-img2-m.png" />
+                            <span class="renderDom" data-lang="section31_17"></span>
+                        </p>
+                        <div class="renderDom" data-lang="section31_18"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <img src="img/section3-img3.png" />
+                            <span class="renderDom" data-lang="section31_19"></span>
+                        </p>
+
+                        <div class="renderDom" data-lang="section31_20"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <img src="img/section3-img4.png" />
+                            <span class="renderDom" data-lang="section31_21"></span>
+                        </p>
+                        <div class="renderDom" data-lang="section31_22"></div>
+                    </li>
+                </ul>
+                <div class="actionInfo">
+                    <a href="" class="tradeBtn trackBtn renderDom" data-lang="section31_23"></a>
+                    <p class="renderDom" data-lang="section31_24"></p>
+                </div>
+            </div>
+            <div class="block4 clearfix">
+                <div class="left">
+                    <div class="img-container">
+                        <img src="img/section4-img.png">
+                    </div>
+                </div>
+                <div class="right">
+                    <h3 class="renderDom" data-lang="section31_25"></h3>
+                    <ul class="d-none d-lg-block d-md-none">
+                        <li class="renderDom" data-lang="section31_26"></li>
+                        <li class="renderDom" data-lang="section31_27"></li>
+                        <li class="renderDom" data-lang="section31_28"></li>
+                        <li class="renderDom" data-lang="section31_29"></li>
+                        <li class="renderDom" data-lang="section31_30"></li>
+                        <li class="renderDom" data-lang="section31_31"></li>
+                        <li class="renderDom" data-lang="section31_32"></li>
+                        <li class="renderDom" data-lang="section31_33"></li>
+                    </ul>
+                    <ul class="d-lg-none d-md-block">
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_26"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_27"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_28"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_29"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_30"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_31"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_32"></span>
+                        </li>
+                        <li>
+                            <img src="img/li-icon.png" alt="">
+                            <span class="renderDom" data-lang="section31_33"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block5 clearfix">
+                <div class="left">
+                    <h3 class="renderDom" data-lang="section31_34"></h3>
+                    <img class="d-lg-none d-md-block" src="img/zh/section5-img.png">
+                    <p class="renderDom" data-lang="section31_35"></p>
+                    <a class="tradeBtn trackBtn renderDom" href="#" data-lang="section31_36"></a>
+                    <p class="renderDom" data-lang="section31_37"></p>
+                </div>
+                <div class="right d-none d-lg-block d-md-none">
+                    <img src="img/zh/section5-img.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sponsor -->
+    <div class="footer">
+        <div class="sponsor">
+            <img src="img/visa-logo.png" />
+            <img src="img/mastercard-logo.png" />
+            <img src="img/poli-logo.png" />
+            <img src="img/wide-logo.png" />
+            <img src="img/skill-logo.png" />
+        </div>
+    </div>
+
+    <!-- forex-ad -->
+    <div class="forex-ad hidden-xs">
+        <span class="renderDom" data-lang="footer_1"></span>
+        <a class="tradeBtn trackBtn renderDom" href="#"data-lang="footer_2">
+        </a>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer hidden-xs">
+        <div class="footer-row">
+            <div class="warning">
+                <p class="a-link">
+                    <a href="https://www.mitrade.com/docs/Mitrade_PrivacyPolicy-zh-TW.pdf" target="_blank" class="renderDom" data-lang="footer_3"></a>
+                    <a href="https://www.mitrade.com/docs/Mitrade_ProductDisclosureStatement-zh-TW.pdf" target="_blank" class="renderDom" data-lang="footer_4">
+                        </a>
+                    <a href="/zh/about-us/complaints" class="renderDom" data-lang="footer_5"> </a>
+                    <a href="https://www.mitrade.com/docs/Mitrade_RiskDisclosureStatement-zh-TW.pdf" target="_blank" class="renderDom" data-lang="footer_6"></a>
+                    <a href="https://www.mitrade.com/docs/Mitrade_ClientAgreement-zh-TW.pdf" target="_blank" class="renderDom" data-lang="footer_7"> 
+                    </a>
+                    <a href="https://www.mitrade.com/docs/Mitrade_FinancialServicesGuide-zh-TW.pdf" target="_blank" class="renderDom" data-lang="footer_8">
+                        </a>
+                    <a href="https://www.mitrade.com/docs/Mitrade_HedgingCounterpartiesPolicy-zh-TW.pdf" target="_blank" class="renderDom" data-lang="footer_9"></a>
+                </p>
+                <p class="renderDom" data-lang="footer_10">
+                </p>
+                <p class="renderDom" data-lang="footer_11">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_12">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_13">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_14">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_15">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_17">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_18">
+                    
+                </p>
+                <p class="renderDom" data-lang="footer_16">
+                   
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--google三方登錄-->
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Open Sans
+    :100,300,400,500,600,800|Open Sans:500|Open Sans|Material+Icons" />
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+    <script src="plug/bootstrap/js/popper.min.js"></script>
+    <script src="plug/bootstrap/js/bootstrap.min.js"></script>
+    <!-- aos-animate -->
+    <script type="text/javascript" src="plug/aos/aos.js"></script>
+    <script type="text/javascript" src="plug/libphonenumber/libphonenumber-max.js"></script>
+    <script type="text/javascript" src="js/base.js?v=20200828"></script>
+
+     
+    <script>
+
+        $(function () {
+
+            var lang = sessionStorage.getItem('lang') ? sessionStorage.getItem('lang'): "en";
+
+            sessionStorage.setItem("onelink", "https://go.onelink.me/ESP8/188a4da0");
+            sessionStorage.setItem("lang", lang);
+
+            // 初始化placeholder显示
+            $("#inputCode").attr("placeholder", langArr[lang]["placeholder_1"]);
+            $("#inputPassword4").attr("placeholder", langArr[lang]["placeholder_2"]);
+
+            // 加载样式替换
+            $("#stylesheet").attr("href", "css/base_" + lang + ".css");
+            
+            $('.head-link').click(function () {
+
+                if ($(this).index() === 0) {
+                    lang = "en";
+                } else if ($(this).index() === 1) {
+                    lang = "zh";
+                } else if ($(this).index() === 2) {
+                    lang = "vn";
+                } else if ($(this).index() === 3) {
+                    lang = "th";
+                }
+
+                // 点击语言切换更改session
+                sessionStorage.setItem("onelink", "https://go.onelink.me/ESP8/188a4da0");
+                sessionStorage.setItem("lang", lang);
+
+                window.location.reload();
+            });
+
+            function getRenderDom() {
+
+                for(var i = 0; i < $('.renderDom').length; i++) {
+
+                    var keyLang = $('.renderDom').eq(i).attr('data-lang');
+                    $('.renderDom').eq(i).html(langArr[lang][keyLang]);
+                }
+            }
+
+            function getParam(param) {
+
+                var urlParams = window.location.search.substring(1);
+
+                return urlParams && urlParams.split("&").map(function(value, index) {
+
+                    return value.split("=")[0] == param && value.split("=")[1];
+                })[0] || null;
+            }
+
+            getRenderDom();
+        })
+    </script>
+
+</body>
+
+</html>
